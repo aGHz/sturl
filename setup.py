@@ -30,6 +30,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Topic :: Internet',
         'Topic :: Internet :: WWW/HTTP',
+    ],
     keywords = ['url'],
 
     download_url = 'https://github.com/aGHz/sturl/tarball/{v}'.format(v=VERSION)
