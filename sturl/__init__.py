@@ -5,5 +5,24 @@ except ImportError:
 
 
 class URL(object):
+    """
+    Usage: ::
+
+        >>> URL('example.com/foo/bar')[0]
+        'foo'
+
+        >>> URL('example.com/foo/bar/')[:]
+        ['foo', 'bar', '']
+
+        >>> URL('example.com/foo/bar/?lot=exp')['lot']
+        'exp'
+
+        >>> URL('example.com/foo') + 'bar/?lot=exp'
+        URL('example.com/foo/bar/?lot=exp')
+
+        >>> URL('example.com/foo?lot=exp#hi') + 'bar'
+        URL('example.com/foo/bar')
+
+    """
     def __init__(self, *args, **kwargs):
         pass
