@@ -19,6 +19,9 @@ setup(
     install_requires = [
     ],
 
+    tests_require = ['nose', 'rednose', ],
+    test_suite = 'nose.collector',
+
     zip_safe = False,
     include_package_data = True,
     package_data = {'': ['LICENSE', 'README.rst']},
